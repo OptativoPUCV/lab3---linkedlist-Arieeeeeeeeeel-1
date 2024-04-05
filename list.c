@@ -33,7 +33,11 @@ List * createList() {
   if (nuevaLista == NULL) {
       exit(EXIT_FAILURE);
   }
-     return NULL;
+  nuevaLista->head = NULL; 
+  nuevaLista->tail = NULL; 
+  nuevaLista->current = NULL; 
+  
+  return nuevaLista;
 }
 
 void * firstList(List * list) {
