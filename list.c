@@ -44,7 +44,6 @@ void * firstList(List * list) {
   if (list == NULL || list->head == NULL) {  //Lista vacía retorna NULL
     return NULL;
   }
-  list->current = list->head; // Current ahora apunta primer nodo
   return list->current->data; //Retorna primer dato de la Lista
 }
 
