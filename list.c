@@ -51,8 +51,8 @@ void * nextList(List * list) {
   if (list == NULL || list->current == NULL || list->current->next == NULL) { 
     return NULL;  //Misma lógica que arriba.
   }
-  list->current = list->current->next;
-  return list->current->data;
+  list->current = list->current->next;   //Actualiza el current del struct para que apunte al nodo next (siguiente).
+  return list->current->data; //Retornar dato del nodo next (siguiente).
 }
 
 void * lastList(List * list) {
