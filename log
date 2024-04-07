@@ -56,3 +56,12 @@ Sun 07 Apr 2024 02:09:42 AM UTC:
  tests:  9|3
 total_score: 35/70
 e62b1ae
+Sun 07 Apr 2024 02:15:39 AM UTC: 
+ list.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+list.c:89:1: error: expected identifier or ‘(’ before ‘}’ token
+   89 | }
+      | ^
+Compilation failed
+74c7f9a
