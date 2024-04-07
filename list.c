@@ -56,11 +56,20 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    return NULL;
+  if (list == NULL || list->tail == NULL) {  //Misma lógica nuevamente
+      return NULL; 
+  }
+  list->current = list->tail; // Current apunta al último nodo
+  return list->current->data;
 }
 
 void * prevList(List * list) {
-    return NULL;
+  if (list == NULL || list->current == NULL || list->current->prev == NULL) {
+    return NULL;   
+  }
+
+  list->current = list->current->prev; // Current apunta al nodo anterior
+  return list->current->data;
 }
 
 void pushFront(List * list, void * data) {
